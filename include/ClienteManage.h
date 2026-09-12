@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <string>
-#include <mysql.h>
+#include "ConnectMYSQL.h"
 
 
 // vamos fazer a conexão com o banco de dados para gerenciar os clientes
@@ -25,23 +25,13 @@ void CadastroNovoCliente(){
     RegistreNovoCliente(nome, email);
     
 }
-void connetctMYSQL(){
-    std::cout<<"conectando com o banco de dados...\n"; 
-    MYSQL *connect = mysql_init(NULL);
-    !connect ?  std::cout<<"erro ao iniciar a conexão com o banco de dados\n" : 
-                std::cout<<"conexão iniciada com sucesso\n";
-    mysql_close(connect);
-
-}
 bool RegistreNovoCliente(const std::string& nome, const std::string& email){
     //conectar com o banco de dados
-    std::cout<<"conectando com o banco de dados...\n"; 
-    MYSQL *connect = mysql_init(NULL);
-    !connect ?  std::cout<<"erro ao iniciar a conexão com o banco de dados\n" : 
-                std::cout<<"conexão iniciada com sucesso\n";
-    mysql_close(connect);
+    std::string comando = "INSERT INTO clientes (nome, email) VALUES ('" + nome + "', '" + email + "')";
+
 
     //inserir o cliente no banco de dados
+    CommandMYSQL(comando);
     //retornar true se sucesso, false se falha
     return true;
 }

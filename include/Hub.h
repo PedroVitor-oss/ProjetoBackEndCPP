@@ -11,8 +11,8 @@ struct Action {
 };
 
 std::map<int, Action> actions = {
-    {1,{"novo cliente", CadastroNovoCliente}},
-    {2,{"conectar bando de dados",connetctMYSQL}}
+    {1,{"novo cliente", CadastroNovoCliente}}
+    // {2,{"conectar bando de dados",connetctMYSQL}}
 
 };
 
