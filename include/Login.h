@@ -70,7 +70,7 @@ bool Login(){
             return false;
         }
         std::cout<<"senha correta, acesso liberado\n";
-        
+        return true;
     }
     return false;
 }
