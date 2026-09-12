@@ -15,13 +15,6 @@ Além de praticar a linguagem, o projeto busca construir uma base para estudos f
 O sistema está em uma fase inicial e acompanha meu aprendizado. Por isso, novas funcionalidades e refatorações serão adicionadas progressivamente.
 
 ## Escopo do sistema
-
-O projeto foi organizado em quatro áreas principais:
-
-- **Produtos:** cadastro, consulta, alteração e remoção;
-- **Estoque:** acompanhamento e atualização das quantidades disponíveis;
-- **Pedidos:** criação e gerenciamento de pedidos;
-- **Relatórios:** apresentação de informações importantes do sistema.
 O projeto foi organizado em quatro áreas principais:
 
 - **Clientes**: cadastro, consulta, alteração e remoção de usuários da biblioteca;
